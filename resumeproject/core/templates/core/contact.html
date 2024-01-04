@@ -1,0 +1,17 @@
+
+{% extends 'core/links.html' %}
+
+{% block content %}
+<h1>contact us </h1>
+<h3>Do you have any questions?Please do not hesitate to connect.I will come back to you within a matter of hours to help you.</h3>
+<form action="" method="POST">
+    {% csrf_token %}
+
+<input type="text" name='name'>
+<input type="email" name='email' placeholder='email'>
+<input type="number" name='phone' placeholder='+91 alreay added'>
+<input type="textarea" name='message' placeholder="message">  
+<button type="submit" id="submit">send</button>  
+</form>
+{% endblock content %}
+    

@@ -2,16 +2,44 @@
 {% extends 'core/links.html' %}
 
 {% block content %}
-<h1>contact us </h1>
-<h3>Do you have any questions?Please do not hesitate to connect.I will come back to you within a matter of hours to help you.</h3>
+<div class="contact1">
+<div class="ch1"><h1>CONTACT US</h1><hr></div>
+<div class="ch3">
+    <h3>Do you have any questions? Please do not hesitate to connect. I will come back to you within a matter of hours to help you.</h3></div>
+    <div class="combine">
+
 <form action="" method="POST">
     {% csrf_token %}
+<div class="teil">
+<input type="text" name='name' placeholder="Enter Your Name">
+<input type="email" name='email' placeholder='shriram@gmail.com'>
+</div>
+<div class="no">
+    <input type="number" name='phone' placeholder='xxxxxx5921'>
 
-<input type="text" name='name'>
-<input type="email" name='email' placeholder='email'>
-<input type="number" name='phone' placeholder='+91 alreay added'>
-<input type="textarea" name='message' placeholder="message">  
-<button type="submit" id="submit">send</button>  
+</div>
+<div class="message">
+
+    <textarea name="message" id="" cols="30" rows="10" placeholder="Enter Your Message"></textarea> 
+</div>
+<div class="btn">
+
+    <button type="submit" id="submit">Send</button>  
+</div>
 </form>
+<div class="callme">
+    <div class="boxes"><span class="material-symbols-outlined">
+        pin_drop
+        </span><p>Madya Pradesh</p></div>
+    <div class="boxes"><span class="material-symbols-outlined">
+        call
+        </span><p>+91 6263335921</p></div>
+    <div class="boxes"><span class="material-symbols-outlined">
+        mail
+        </span><p>ayushijain.jain12345@gmail.com</p></div>
+</div>
+</div>
+</div>
+
 {% endblock content %}
     

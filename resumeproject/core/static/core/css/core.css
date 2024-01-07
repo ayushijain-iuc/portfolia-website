@@ -40,10 +40,11 @@ html {
 .content {
   width: calc(100% - (20% + 2px));
   height: 100%;
-  background-color: rgb(41, 46, 41);
+  background-color: rgb(16, 33, 44);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+
 }
 
 .photoname {
@@ -235,6 +236,7 @@ hr {
   flex-direction: column;
   font-family: sans-serif;
   padding: 50px;
+  margin-top: 50px;
 }
 
 .ch1 {
@@ -279,7 +281,7 @@ form {
 .callme{
   width: 30%;
   height: 100%;
-  
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
 
@@ -374,4 +376,63 @@ form {
   .home {
     width: 100%;
   }
+}
+
+.services{
+  width: 100%;
+  height: fit-content;
+  /* background-color: red; */
+  margin-top: 50px;
+  padding: 50px;
+  font-family: sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.services h1{
+  color: orange;
+  font-size: 40px;
+}
+.divisions{
+  margin-top: 50px;
+  width: 100%;
+  height: fit-content;
+  /* background: green; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.divs{
+  height: 220px;
+  width: 40%;
+  /* background-color: red; */
+  border-radius: 12px;
+  background-color: rgb(94, 72, 31);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  text-align: center;
+  /* box-shadow: 8px 8px 8px rgba(175, 175, 175, 0.637); */
+}
+.divs span{
+ display: inline-block;
+ color:greenyellow;
+ font-size: 40px;
+}
+.divs h2{
+font-size: 30px;
+margin-bottom: 10px;
+
+ }
+ .divs p{
+  font-size: 15px;
+  
+   }
+.skills{
+  width: 100%;
+  height: 500px;
+  background-color: green;
 }

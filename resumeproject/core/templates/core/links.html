@@ -7,15 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Home</title>
-    <link rel="stylesheet" href="{% static 'core/css/tem.css' %}" />
+  
 
     <link rel="stylesheet" href="{% static 'core/css/core.css' %}" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    
-  
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lemon&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
   </head>
   <body>
     <div class="main">
+      <div class="just"></div>
       <div class="sidebar">
         <div class="photoname">
           <div class="circle">
@@ -27,12 +35,19 @@
           </div>
           <h1 class="myname">Ayushi Jain</h1>
           <div class="icons">
-            <a href="https://www.linkedin.com/in/ayushi-jain-368557239/"><img src="{% static 'core/images/linkedin.png' %}" alt=""></a>
-            <a href="https://github.com/ayushijain-iuc"><img src="{% static 'core/images/github.png' %}" alt=""></a>
-            <a href="https://www.hackerrank.com/profile/ayushijain_jain1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAWlBMVEUNFB4A6mT///8AAAANEh4NBR0A6GQNABoACxgFDhoNABcA7WU5PUMkKTAHm0gFv1UAABOwsbO/wMLr7O0AAAUYHibx8fKLjI8AAAuZmp0Jdjusra68vb/39/dMlznKAAAA/ElEQVR4nO3cOQ7CMBRF0YCBBMI8j/vfJkICiriBSETi65z6Fb5KFRcuCgAAAAAAAAAAAAAAAAAAAICPjRu+Xg3a6STucfK0bDrmq202Su/Gshy2UnYUuNv3mw5Z4vaUjTbVK/Bc90Yt1PNuEqtpdvb+KjVXaZ2vZs+PWM7rXhv1YqJQoUKFChUqVKhQoUKFChUqVKhQoUKFChX+uPCSMtdYhbdN5har8DMKFSpUqFChQoUKFSpUqFDhvxfG/8ePf08T/65NoUKFChUqVKhQoUKFChUqVKhQoUKFChVGLIz/pkL8dzGK+G+bAAAAAAAAAAAAAAAAAAAAAH/tDsvlYejehUEgAAAAAElFTkSuQmCC" alt=""></a>
+            <a href="https://www.linkedin.com/in/ayushi-jain-368557239/"
+              ><img src="{% static 'core/images/linkedin.png' %}" alt=""
+            /></a>
+            <a href="https://github.com/ayushijain-iuc"
+              ><img src="{% static 'core/images/github.png' %}" alt=""
+            /></a>
+            <a href="https://www.hackerrank.com/profile/ayushijain_jain1"
+              ><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAWlBMVEUNFB4A6mT///8AAAANEh4NBR0A6GQNABoACxgFDhoNABcA7WU5PUMkKTAHm0gFv1UAABOwsbO/wMLr7O0AAAUYHibx8fKLjI8AAAuZmp0Jdjusra68vb/39/dMlznKAAAA/ElEQVR4nO3cOQ7CMBRF0YCBBMI8j/vfJkICiriBSETi65z6Fb5KFRcuCgAAAAAAAAAAAAAAAAAAAICPjRu+Xg3a6STucfK0bDrmq202Su/Gshy2UnYUuNv3mw5Z4vaUjTbVK/Bc90Yt1PNuEqtpdvb+KjVXaZ2vZs+PWM7rXhv1YqJQoUKFChUqVKhQoUKFChUqVKhQoUKFChX+uPCSMtdYhbdN5har8DMKFSpUqFChQoUKFSpUqFDhvxfG/8ePf08T/65NoUKFChUqVKhQoUKFChUqVKhQoUKFChVGLIz/pkL8dzGK+G+bAAAAAAAAAAAAAAAAAAAAAH/tDsvlYejehUEgAAAAAElFTkSuQmCC"
+                alt=""
+            /></a>
           </div>
           <hr />
-  
         </div>
         <div class="links">
           <ul>
@@ -52,11 +67,11 @@
           </ul>
         </div>
       </div>
+      {% comment %}
       <div class="line"></div>
+      {% endcomment %}
       <div class="content">
         {% block content %} {% endblock content %} 
-        {% block Services %} {%endblock Services %} 
-        {% block Skills %} {% endblock Skills %}
       </div>
     </div>
   </body>

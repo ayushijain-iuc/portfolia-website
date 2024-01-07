@@ -8,38 +8,43 @@
 }
 
 body,
+
 html {
   width: 100%;
-  height: 100%;
-  overflow: hidden;
+  height: 100vh;
+  overflow-x: hidden;
   background-color: grey;
 }
 
 .main {
   width: 100%;
-  height: 100%;
-  background-color: red;
-  margin: 2px;
+  height: 100vh;
+  background-color: rgb(16, 33, 44);
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
+
 .sidebar {
   width: 20%;
   height: 100%;
   background-color: rgb(41, 46, 41);
+  position: fixed;
+  border-right: 2px solid orange;
 }
 
-.line {
-  width: 2px;
+.just {
+  width: 20%;
   height: 100%;
-  background-color: orange;
+  background-color: rgb(41, 46, 41);
+
 }
+
 
 .content {
-  width: calc(100% - (20% + 2px));
-  height: 100%;
+  width: 80%;
+  height: fit-content;
   background-color: rgb(16, 33, 44);
   display: flex;
   align-items: flex-start;
@@ -53,7 +58,6 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: red; */
   justify-content: center;
   margin: 50px 0 0 0;
   color: white;
@@ -184,7 +188,7 @@ hr {
 .about {
   width: 100%;
   height: 300px;
-  /* background-color: red; */
+
   padding: 0 5%;
 }
 
@@ -195,7 +199,7 @@ hr {
 }
 
 .about p {
-  font-family: sans-serif;
+  font-family: 'Lemon', serif;
   color: white;
   font-size: 17px;
 }
@@ -203,7 +207,6 @@ hr {
 .buttons {
   width: 100%;
   height: 100px;
-  /* background-color: green; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -228,15 +231,15 @@ hr {
 
 .contact1 {
   width: 100%;
-  height: 600px;
-  /* background-color: aqua; */
+  height: 100vh;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
   font-family: sans-serif;
   padding: 50px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  /* overflow-y: hidden; */
 }
 
 .ch1 {
@@ -257,6 +260,7 @@ hr {
   color: white;
   margin: 5px 0 30px 0;
 }
+
 .combine {
   width: 100%;
   height: 400px;
@@ -278,7 +282,8 @@ form {
   letter-spacing: 1.1;
   margin-top: 20px;
 }
-.callme{
+
+.callme {
   width: 30%;
   height: 100%;
   margin-top: 30px;
@@ -286,7 +291,8 @@ form {
   flex-direction: column;
 
 }
-.boxes{
+
+.boxes {
   width: 100%;
   height: 60px;
   display: flex;
@@ -297,11 +303,13 @@ form {
   margin-bottom: 40px;
 
 }
-.boxes span{
+
+.boxes span {
   font-size: 60px;
 
 }
-.boxes p{
+
+.boxes p {
   font-size: 15px;
   font-weight: 500;
   color: white;
@@ -321,6 +329,7 @@ form {
   height: 100%;
   padding: 5px;
 }
+
 .no {
   width: 100%;
   height: 40px;
@@ -328,11 +337,13 @@ form {
   justify-content: flex-start;
   margin: 15px 0 0 0;
 }
+
 .no input {
   width: 49%;
   height: 100%;
   padding: 5px;
 }
+
 .message {
   width: 100%;
   height: 70px;
@@ -340,12 +351,14 @@ form {
   justify-content: flex-start;
   margin: 15px 0 0 0;
 }
+
 .message textarea {
   width: 100%;
   height: 100%;
   text-align: start;
   padding: 5px;
 }
+
 .btn {
   width: 100%;
   height: 40px;
@@ -353,6 +366,7 @@ form {
   justify-content: flex-end;
   margin: 15px 0 0 0;
 }
+
 .btn button {
   height: 100%;
   width: 120px;
@@ -360,9 +374,136 @@ form {
   border: 2px solid orange;
   color: orange;
 }
+
 .btn button:hover {
   box-shadow: 0 0 10px orange;
+
+
 }
+
+
+.services {
+  width: 100%;
+  height: fit-content;
+  /* background-color: red; */
+  margin-top: 150px;
+  padding: 50px;
+  font-family: sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.services h1 {
+  color: orange;
+  font-size: 40px;
+}
+
+.divisions {
+  margin-top: 50px;
+  width: 100%;
+  height: fit-content;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.divs {
+  height: 220px;
+  width: 40%;
+  border-radius: 12px;
+  background-color: rgb(94, 72, 31);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  text-align: center;
+  /* box-shadow: 8px 8px 8px rgba(175, 175, 175, 0.637); */
+}
+
+.divs span {
+  display: inline-block;
+  color: greenyellow;
+  font-size: 40px;
+}
+
+.divs h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+
+}
+
+.divs p {
+  font-size: 15px;
+
+}
+
+.skills {
+  width: 100%;
+  height: 100vh;
+
+  padding: 40px;
+  padding-inline: 60px;
+
+
+
+}
+
+.wrap {
+  display: flex;
+  margin-top: 20px;
+}
+
+.skills h1 {
+  border-bottom: 2px solid white;
+  color: orange;
+
+}
+
+.progress {
+  width: 100%;
+  height: fit-content;
+
+  display: flex;
+  gap: 10px;
+}
+
+.left p, .right p {
+  font-size: 18px;
+  margin-bottom: -10px;
+  color: white;
+}
+
+
+.left, .right {
+  width: 50%;
+  height: fit-content;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.outer {
+  height: 15px;
+  width: 100%;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.inner {
+  height: 15px;
+  width: 80%;
+  background-color: #5CB3FF;
+  border-radius: 10px;
+}
+
+
+
 
 @media only screen and (max-width: 768px) {
   .sidebar {
@@ -376,63 +517,4 @@ form {
   .home {
     width: 100%;
   }
-}
-
-.services{
-  width: 100%;
-  height: fit-content;
-  /* background-color: red; */
-  margin-top: 50px;
-  padding: 50px;
-  font-family: sans-serif;
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
-.services h1{
-  color: orange;
-  font-size: 40px;
-}
-.divisions{
-  margin-top: 50px;
-  width: 100%;
-  height: fit-content;
-  /* background: green; */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 20px;
-}
-.divs{
-  height: 220px;
-  width: 40%;
-  /* background-color: red; */
-  border-radius: 12px;
-  background-color: rgb(94, 72, 31);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  padding: 20px;
-  text-align: center;
-  /* box-shadow: 8px 8px 8px rgba(175, 175, 175, 0.637); */
-}
-.divs span{
- display: inline-block;
- color:greenyellow;
- font-size: 40px;
-}
-.divs h2{
-font-size: 30px;
-margin-bottom: 10px;
-
- }
- .divs p{
-  font-size: 15px;
-  
-   }
-.skills{
-  width: 100%;
-  height: 500px;
-  background-color: green;
 }

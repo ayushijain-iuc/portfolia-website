@@ -10,12 +10,24 @@
 
 <form action="" method="POST">
     {% csrf_token %}
+    
+
+<p><span style="font-weight: bold; color: yellow;">{{ thankyou_message }}</span></p>
+
+
+
+<p><span style="font-weight: bold; color: yellow;">{{ error_message }}</span></p>
+
 <div class="teil">
 <input type="text" name='name' placeholder="Enter Your Name">
 <input type="email" name='email' placeholder='shriram@gmail.com'>
 </div>
 <div class="no">
     <input type="number" name='phone' placeholder='xxxxxx5921'>
+
+</div>
+<div class="subject">
+    <input type="text" name='subject' placeholder='Title Of The Email'>
 
 </div>
 <div class="message">
